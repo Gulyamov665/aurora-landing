@@ -15,7 +15,7 @@ export const HeaderNavigation: React.FC = () => {
   }
   return (
     <AppBar
-      position="static"
+      position="sticky"
       color="transparent"
       sx={{ boxShadow: 'none', padding: 0, margin: 0 }}
     >
