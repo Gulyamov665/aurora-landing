@@ -19,14 +19,7 @@ export const DeliveryDescriptionItem: React.FC<DeliveryDescriptionItemProps> = (
     return (
         <Box sx={{ py: { xs: 6, md: 12 } }}>
             <Container maxWidth="lg">
-                <Typography
-                    variant="h4"
-                    fontWeight="bold"
-                    textAlign="center"
-                    mb={8}
-                >
-                    Возможности сайта для приема заказов
-                </Typography>
+                
 
                 <Grid
                     container
