@@ -1,11 +1,10 @@
 import React from 'react'
-import { Box, Button, Container, Typography } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import appScreen from '@/assets/apple-iphone-15-black-mockup/main-screen.png'
 import appScreenSecond from '@/assets/apple-iphone-15-black-mockup/main-screen-secondary.png'
 import { motion } from 'framer-motion'
 import { fadeInLeft, fadeInRight } from '@/apps/animations/boxAnimations'
 import { OrangeButton } from '@/apps/common/CusButton'
-;('hello')
 
 export const Hero: React.FC = () => {
   return (
