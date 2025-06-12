@@ -4,6 +4,8 @@ import { List, ListItem, ListItemIcon } from '@mui/material'
 import { ListItemText, Typography } from '@mui/material'
 import React from 'react'
 
+'hello'
+
 const pricing = [
   {
     name: 'Базовый',
