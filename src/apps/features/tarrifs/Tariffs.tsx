@@ -1,8 +1,8 @@
+import React from 'react'
 import { CheckCircle } from '@mui/icons-material'
 import { Box, Card, CardContent, Chip, Grid } from '@mui/material'
 import { List, ListItem, ListItemIcon } from '@mui/material'
 import { ListItemText, Typography } from '@mui/material'
-import React from 'react'
 
 const pricing = [
   {
