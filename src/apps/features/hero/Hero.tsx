@@ -3,8 +3,6 @@ import { Box, Button, Container, Typography } from '@mui/material'
 import appScreen from '@/assets/apple-iphone-15-black-mockup/main-screen.png'
 import appScreenSecond from '@/assets/apple-iphone-15-black-mockup/main-screen-secondary.png'
 
-;('hello')
-
 export const Hero: React.FC = () => {
   return (
     <Box
