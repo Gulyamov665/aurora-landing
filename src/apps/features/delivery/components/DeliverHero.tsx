@@ -8,7 +8,8 @@ import {
   fadeInUp,
 } from '@/apps/animations/boxAnimations'
 import { Box, ListItem, ListItemText } from '@mui/material'
-import { Container, Typography, Button, List } from '@mui/material'
+import { Container, Typography, List } from '@mui/material'
+import { OrangeButton } from '@/apps/common/CusButton'
 
 export const DeliverHero: React.FC = () => {
   return (
@@ -93,25 +94,7 @@ export const DeliverHero: React.FC = () => {
                 Современное решение для вашего заведения
               </Typography>
 
-              <Button
-                variant="contained"
-                color="warning"
-                size="large"
-                sx={{
-                  mt: 3,
-                  borderRadius: 4,
-                  px: 4,
-                  boxShadow: '0 8px 20px rgba(255, 193, 7, 0.3)',
-                  textTransform: 'none',
-                  fontWeight: 'bold',
-                  '&:hover': {
-                    backgroundColor: '#ffb300',
-                    boxShadow: '0 12px 24px rgba(255, 193, 7, 0.4)',
-                  },
-                }}
-              >
-                Связаться с нами
-              </Button>
+              <OrangeButton title="Связаться с нами" />
             </Box>
           </motion.div>
 

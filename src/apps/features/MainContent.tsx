@@ -1,10 +1,11 @@
 import type React from 'react'
-import { Container, Typography, Button, Box } from '@mui/material'
+import { Container, Typography, Box } from '@mui/material'
 import { Hero } from './hero/Hero'
 import { Advantages } from './advantages/Advantages'
 import { Tariffs } from './tarrifs/Tariffs'
 import { PartnersSlider } from './slider/PartnersSlider'
 import { mainFeatures } from '../content/advantagesContent'
+import { OrangeButton } from '../common/CusButton'
 
 export const MainContent: React.FC = () => {
   return (
@@ -25,21 +26,7 @@ export const MainContent: React.FC = () => {
           <Typography variant="h5" sx={{ mt: 10 }}>
             Готовы перейти на электронное меню?
           </Typography>
-          <Button
-            variant="outlined"
-            size="large"
-            color="warning"
-            sx={{
-              mt: 2,
-              borderRadius: 20,
-              borderWidth: 2,
-              '&:hover': {
-                borderWidth: 2,
-              },
-            }}
-          >
-            Запросить доступ
-          </Button>
+          <OrangeButton title="Связаться с нами" />
         </Box>
       </Container>
     </>

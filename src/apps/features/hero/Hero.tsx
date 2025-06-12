@@ -4,6 +4,7 @@ import appScreen from '@/assets/apple-iphone-15-black-mockup/main-screen.png'
 import appScreenSecond from '@/assets/apple-iphone-15-black-mockup/main-screen-secondary.png'
 import { motion } from 'framer-motion'
 import { fadeInLeft, fadeInRight } from '@/apps/animations/boxAnimations'
+import { OrangeButton } from '@/apps/common/CusButton'
 ;('hello')
 
 export const Hero: React.FC = () => {
@@ -44,22 +45,7 @@ export const Hero: React.FC = () => {
               >
                 Современное решение для вашего заведения
               </Typography>
-              <Button
-                variant="outlined"
-                color="warning"
-                size="large"
-                sx={{
-                  mt: 3,
-                  borderRadius: 20,
-                  borderWidth: 2,
-                  px: 4,
-                  '&:hover': {
-                    borderWidth: 2,
-                  },
-                }}
-              >
-                Связаться с нами
-              </Button>
+              <OrangeButton title="Связаться с нами" />
             </Box>
           </motion.div>
 
