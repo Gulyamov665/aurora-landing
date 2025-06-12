@@ -4,7 +4,6 @@ import appScreen from '@/assets/apple-iphone-15-black-mockup/main-screen.png'
 import appScreenSecond from '@/assets/apple-iphone-15-black-mockup/main-screen-secondary.png'
 import { motion } from 'framer-motion'
 import { fadeInLeft, fadeInRight } from '@/apps/animations/boxAnimations'
-
 ;('hello')
 
 export const Hero: React.FC = () => {

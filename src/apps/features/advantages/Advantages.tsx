@@ -1,38 +1,20 @@
 import React from 'react'
 import { Box, Card, CardContent, Grid, Typography } from '@mui/material'
-import {
-  Restaurant,
-  MobileFriendly,
-  TrendingUp,
-  Update,
-} from '@mui/icons-material'
+
 import { motion } from 'framer-motion'
-import { fadeInLeft, fadeInUp } from '@/apps/animations/boxAnimations'
+import { fadeInLeft } from '@/apps/animations/boxAnimations'
 
-const features = [
-  {
-    icon: <MobileFriendly fontSize="large" color="warning" />,
-    title: 'Удобно и быстро',
-    description: 'Меню на телефоне по QR-коду без загрузки приложений.',
-  },
-  {
-    icon: <Update fontSize="large" color="warning" />,
-    title: 'Мгновенные обновления',
-    description: 'Меню можно обновить за 1 минуту — без печати.',
-  },
-  {
-    icon: <TrendingUp fontSize="large" color="warning" />,
-    title: 'Рост среднего чека',
-    description: 'Фотографии и описания блюд повышают продажи.',
-  },
-  {
-    icon: <Restaurant fontSize="large" color="warning" />,
-    title: 'Подходит для всех заведений',
-    description: 'Кафе, бары, рестораны, кофейни — Aurora адаптируется.',
-  },
-]
+export interface Feature {
+  icon: JSX.Element
+  title: string
+  description: string
+}
 
-export const Advantages: React.FC = () => {
+interface AdvantagesProps {
+  features: Feature[]
+}
+
+export const Advantages: React.FC<AdvantagesProps> = ({ features }) => {
   return (
     <Box sx={{ px: { xs: 2, md: 4 }, py: 6 }}>
       <Typography variant="h4" sx={{ mb: 6, textAlign: 'center' }}>

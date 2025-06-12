@@ -4,6 +4,7 @@ import { Hero } from './hero/Hero'
 import { Advantages } from './advantages/Advantages'
 import { Tariffs } from './tarrifs/Tariffs'
 import { PartnersSlider } from './slider/PartnersSlider'
+import { mainFeatures } from '../content/advantagesContent'
 
 export const MainContent: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ export const MainContent: React.FC = () => {
       <Hero />
       <Container maxWidth="lg" sx={{ py: 8 }}>
         {/* Преимущества */}
-        <Advantages />
+        <Advantages features={mainFeatures} />
         {/* Тарифы */}
 
         <Tariffs />
