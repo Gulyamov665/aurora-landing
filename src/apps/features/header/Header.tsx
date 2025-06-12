@@ -1,13 +1,12 @@
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Container } from '@mui/material'
+import { HeaderNavigation } from './components/HeaderDropdown'
 import React from 'react'
 
 export const Header: React.FC = () => {
   return (
-    <Box sx={{ bgcolor: '#f5f5f5', py: 4 }}>
+    <Box sx={{ bgcolor: '#f5f5f5', py: 1 }}>
       <Container maxWidth="lg">
-        <Typography variant='button'>
-            Aurora Team
-        </Typography>
+        <HeaderNavigation />
       </Container>
     </Box>
   )
