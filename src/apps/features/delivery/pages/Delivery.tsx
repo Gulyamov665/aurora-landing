@@ -16,6 +16,7 @@ export const Delivery: React.FC = () => {
                     fontWeight="bold"
                     textAlign="center"
                     mb={8}
+                    marginTop={15}
                 >
                     Возможности сайта для приема заказов
                 </Typography>
