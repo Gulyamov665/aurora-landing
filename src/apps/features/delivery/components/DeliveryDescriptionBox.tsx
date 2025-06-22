@@ -34,13 +34,13 @@ export const DeliveryDescriptionItem: React.FC<DeliveryDescriptionItemProps> = (
                             component="img"
                             src={item.img}
                             alt="Меню на телефоне"
-                            sx={{ width: '50%', maxWidth: 400, mx: 'auto', display: 'block' }}
+                            sx={{ width: '65%', maxWidth: 400, mx: 'auto', display: 'block' }}
                         />
                     </Grid>
 
                     {/* Текст справа */}
-                    <Grid item xs={12} md={6}>
-                        <Typography variant="h5" fontWeight="medium" gutterBottom>
+                    <Grid item xs={12} md={5}>
+                        <Typography variant="h4" fontWeight="bold" gutterBottom >
                             {item.title}
                         </Typography>
                         <List >
